@@ -1,0 +1,5 @@
+<apex:page standardController="Contact">
+    <flow:interview name="Display_Tickets_For_Selected_Contacts" finishLocation="/{!Contact.Id}">
+    	<!--<apex:param name="..." value="{!Contact.Id}"/>-->
+    </flow:interview>>
+</apex:page>

@@ -1,0 +1,26 @@
+<!--
+ - Created by rober on 2023. 02. 06..
+ -->
+
+<!-- Tableaux -->
+<template>
+    <lightning-card title="Create and View Quote Record">
+        <div class="slds-p-horizontal_small">
+
+            <lightning-record-form object-api-name="Quote" record-id={strRecordId}
+                                   columns="2" mode="edit" fields={arrayFields}></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <div class="quote-container">
+        <lightning-record-view-form record-id={recordId} object-api-name="Quote">
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-1">
+                    <lightning-output-field field-name="Name"></lightning-output-field>
+                </div>
+            </div>
+        </lightning-record-view-form>
+    </div>
+
+    <lightning-button label="Example button"></lightning-button>
+</template>
